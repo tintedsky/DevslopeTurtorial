@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HTTPService.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[HTTPService instance]test];
 }
+
 
 
 - (void)didReceiveMemoryWarning {
