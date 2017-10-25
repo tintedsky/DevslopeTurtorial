@@ -20,8 +20,4 @@
     
     return sharedInstance;
 }
-
--(void)test{
-    NSLog(@"This is a test!");
-}
 @end
