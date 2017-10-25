@@ -14,6 +14,7 @@
     
     @synchronized (self) {
         if(!sharedInstance){ // if (sharedInsance == nil)
+            //Rather than using [HTTPService alloc], we use and should use [self alloc] inside class methods.
             sharedInstance = [[self alloc]init];
         }
     }
