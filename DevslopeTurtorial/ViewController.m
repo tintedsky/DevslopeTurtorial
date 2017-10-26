@@ -25,8 +25,6 @@
             //
         }
     }];
-    
-    [[HTTPService instance] getTutorials:nil];
 }
 
 
