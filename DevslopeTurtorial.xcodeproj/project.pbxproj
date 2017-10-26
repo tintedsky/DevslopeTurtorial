@@ -14,6 +14,7 @@
 		FC33A1BF1F9FF10900F4423A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC33A1BE1F9FF10900F4423A /* Assets.xcassets */; };
 		FC33A1C21F9FF10900F4423A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC33A1C01F9FF10900F4423A /* LaunchScreen.storyboard */; };
 		FC33A1CC1F9FF13000F4423A /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = FC33A1CB1F9FF13000F4423A /* HTTPService.m */; };
+		FC7DBF2D1FA2853300F30EF3 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7DBF2C1FA2853300F30EF3 /* VideoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FC33A1C31F9FF10900F4423A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC33A1CA1F9FF13000F4423A /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
 		FC33A1CB1F9FF13000F4423A /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		FC7DBF2B1FA2853300F30EF3 /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		FC7DBF2C1FA2853300F30EF3 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		FC33A1B11F9FF10900F4423A /* DevslopeTurtorial */ = {
 			isa = PBXGroup;
 			children = (
+				FC7DBF2A1FA284E100F30EF3 /* View */,
 				FC33A1C91F9FF11200F4423A /* Services */,
 				FC33A1B51F9FF10900F4423A /* AppDelegate.h */,
 				FC33A1B61F9FF10900F4423A /* AppDelegate.m */,
@@ -90,6 +94,15 @@
 				FC33A1CB1F9FF13000F4423A /* HTTPService.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		FC7DBF2A1FA284E100F30EF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC7DBF2B1FA2853300F30EF3 /* VideoCell.h */,
+				FC7DBF2C1FA2853300F30EF3 /* VideoCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC33A1BA1F9FF10900F4423A /* ViewController.m in Sources */,
+				FC7DBF2D1FA2853300F30EF3 /* VideoCell.m in Sources */,
 				FC33A1CC1F9FF13000F4423A /* HTTPService.m in Sources */,
 				FC33A1B71F9FF10900F4423A /* AppDelegate.m in Sources */,
 				FC33A1B41F9FF10900F4423A /* main.m in Sources */,
@@ -328,6 +342,7 @@
 				FC33A1C81F9FF10900F4423A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
