@@ -7,6 +7,7 @@
 //
 
 #import "VideoCell.h"
+#import "Video.h"
 
 @interface VideoCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLbl;
@@ -27,10 +28,13 @@
     self.layer.shadowOffset = CGSizeMake(0.0, 2.0);
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)configureCell:(nonnull Video*)video{
+    if(video){
+        self.titleLbl.text = video.videoTitle;
+        self.descLbl.text = video.videoDescription;
+        
+        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:video.thumbnailUrl]]];
+        self.thumbImg.image = image;
+    }
 }
-
 @end

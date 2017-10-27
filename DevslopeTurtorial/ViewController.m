@@ -63,6 +63,10 @@
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    VideoCell *videoCell = (VideoCell *)cell;
+    [videoCell configureCell:video];
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
