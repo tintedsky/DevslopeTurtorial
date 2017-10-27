@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 //Here we define a block, like a function pointer in C.
-typedef void (^onComplete)(NSDictionary * __nullable dataDict, NSString * __nullable errMsg);
+typedef void (^onComplete)(NSArray * __nullable dataArray, NSString * __nullable errMsg);
 
 @interface HTTPService : NSObject
 + (id)instance;
