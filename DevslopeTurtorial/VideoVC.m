@@ -26,6 +26,7 @@
 
     self.titleLbl.text = self.video.videoTitle;
     self.descLbl.text = self.video.videoDescription;
+    [self.webView loadHTMLString:self.video.videoIframe baseURL:nil];
 }
 
 - (void)didReceiveMemoryWarning {

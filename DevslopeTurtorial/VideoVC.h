@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 @class Video;
-@interface VideoVC : UIViewController
+@interface VideoVC : UIViewController <UIWebViewDelegate>
 @property (nonatomic, strong) Video *video;
 @end
