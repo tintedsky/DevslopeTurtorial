@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC2D05111FAA6BB700AF8CCF /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D05101FAA6BB700AF8CCF /* VideoVC.m */; };
 		FC33A1B41F9FF10900F4423A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC33A1B31F9FF10900F4423A /* main.m */; };
 		FC33A1B71F9FF10900F4423A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC33A1B61F9FF10900F4423A /* AppDelegate.m */; };
 		FC33A1BA1F9FF10900F4423A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC33A1B91F9FF10900F4423A /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC2D050F1FAA6BB700AF8CCF /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		FC2D05101FAA6BB700AF8CCF /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 		FC33A1AF1F9FF10900F4423A /* DevslopeTurtorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevslopeTurtorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC33A1B31F9FF10900F4423A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC33A1B51F9FF10900F4423A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC2D050E1FAA6B8800AF8CCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC2D050F1FAA6BB700AF8CCF /* VideoVC.h */,
+				FC2D05101FAA6BB700AF8CCF /* VideoVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		FC33A1A61F9FF10900F4423A = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 		FC33A1B11F9FF10900F4423A /* DevslopeTurtorial */ = {
 			isa = PBXGroup;
 			children = (
+				FC2D050E1FAA6B8800AF8CCF /* Controller */,
 				FC7DBF2E1FA2948000F30EF3 /* Model */,
 				FC7DBF2A1FA284E100F30EF3 /* View */,
 				FC33A1C91F9FF11200F4423A /* Services */,
@@ -194,6 +207,7 @@
 				FC7DBF2D1FA2853300F30EF3 /* VideoCell.m in Sources */,
 				FC33A1CC1F9FF13000F4423A /* HTTPService.m in Sources */,
 				FC7DBF311FA294B700F30EF3 /* Video.m in Sources */,
+				FC2D05111FAA6BB700AF8CCF /* VideoVC.m in Sources */,
 				FC33A1B71F9FF10900F4423A /* AppDelegate.m in Sources */,
 				FC33A1B41F9FF10900F4423A /* main.m in Sources */,
 			);

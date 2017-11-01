@@ -114,11 +114,91 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="CN2-m6-ngQ" id="Y2r-NV-V0C"/>
+                        <segue destination="HLz-gJ-isj" kind="presentation" identifier="videoVC" id="oWS-rx-n3F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-80.625" y="116.25"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="84u-cw-4tE">
+            <objects>
+                <viewController id="HLz-gJ-isj" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCe-Sd-kbM"/>
+                        <viewControllerLayoutGuide type="bottom" id="h7M-wb-a5E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w1l-Nu-LRe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUE-1d-gl7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="f7b-P9-YlL"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHotoshop Tutorial For Beginners. PHotoshop Tutorial For Beginners." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4q-Lh-qGT">
+                                <rect key="frame" x="16" y="196" width="288" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="fn7-Iv-Ce2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7m-CE-mZ8">
+                                <rect key="frame" x="16" y="246" width="288" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="o3M-pS-3lC"/>
+                                </constraints>
+                                <mutableString key="text">PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.PHotoshop Tutorial For Beginners.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yA-4I-3Gc">
+                                <rect key="frame" x="16" y="421" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="evg-Ey-FuX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="HLz-gJ-isj" eventType="touchUpInside" id="Qav-JS-tBf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hUE-1d-gl7" firstAttribute="top" secondItem="w1l-Nu-LRe" secondAttribute="top" id="05w-Mu-dZD"/>
+                            <constraint firstItem="B7m-CE-mZ8" firstAttribute="leading" secondItem="w1l-Nu-LRe" secondAttribute="leading" constant="16" id="2dj-RJ-Ibr"/>
+                            <constraint firstAttribute="trailing" secondItem="B7m-CE-mZ8" secondAttribute="trailing" constant="16" id="4TU-qd-4Dz"/>
+                            <constraint firstItem="hUE-1d-gl7" firstAttribute="leading" secondItem="w1l-Nu-LRe" secondAttribute="leading" id="CFl-JF-W26"/>
+                            <constraint firstItem="7yA-4I-3Gc" firstAttribute="leading" secondItem="w1l-Nu-LRe" secondAttribute="leadingMargin" id="Jyo-wx-bRT"/>
+                            <constraint firstItem="O4q-Lh-qGT" firstAttribute="trailing" secondItem="w1l-Nu-LRe" secondAttribute="trailingMargin" id="K9h-i8-lUZ"/>
+                            <constraint firstItem="O4q-Lh-qGT" firstAttribute="top" secondItem="hUE-1d-gl7" secondAttribute="bottom" constant="8" id="Kst-2a-eRk"/>
+                            <constraint firstItem="O4q-Lh-qGT" firstAttribute="leading" secondItem="w1l-Nu-LRe" secondAttribute="leadingMargin" id="SGZ-dp-i6G"/>
+                            <constraint firstItem="7yA-4I-3Gc" firstAttribute="trailing" secondItem="w1l-Nu-LRe" secondAttribute="trailingMargin" id="Tcj-OO-fuN"/>
+                            <constraint firstItem="h7M-wb-a5E" firstAttribute="top" secondItem="7yA-4I-3Gc" secondAttribute="bottom" constant="29" id="WrN-98-GtM"/>
+                            <constraint firstAttribute="trailing" secondItem="hUE-1d-gl7" secondAttribute="trailing" id="Z49-cf-dbi"/>
+                            <constraint firstItem="B7m-CE-mZ8" firstAttribute="top" secondItem="O4q-Lh-qGT" secondAttribute="bottom" constant="8" id="hSA-KT-aZA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descLbl" destination="B7m-CE-mZ8" id="Uin-1e-EVm"/>
+                        <outlet property="titleLbl" destination="O4q-Lh-qGT" id="ZU4-zJ-hZg"/>
+                        <outlet property="webView" destination="hUE-1d-gl7" id="FEg-Xc-ZyX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKs-21-IdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736.875" y="115"/>
         </scene>
     </scenes>
 </document>
