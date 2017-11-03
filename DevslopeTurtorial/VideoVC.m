@@ -29,10 +29,13 @@
     self.titleLbl.text = self.video.videoTitle;
     self.descLbl.text = self.video.videoDescription;
     [self.webView loadHTMLString:self.video.videoIframe baseURL:nil];
-    [self reloadLayout];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    [self reloadLayout];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
     [self reloadLayout];
 }
 
